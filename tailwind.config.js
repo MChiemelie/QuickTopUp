@@ -6,7 +6,7 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   mode: 'jit',
-  darkMode: 'media',
+  darkMode: true,
   theme: {
     extend: {
       backgroundImage: {

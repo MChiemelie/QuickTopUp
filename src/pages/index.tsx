@@ -1,3 +1,5 @@
+import React from 'react';
+import * as Component from '../../sections';
 import { useUser } from '@auth0/nextjs-auth0/client';
 
 export default function HomePage() {
@@ -14,7 +16,15 @@ export default function HomePage() {
   if (user) {
     return (
       <>
-        <h1>Welcome {user.nickname}!</h1>
+      <Component.Nav />
+      <h1>Welcome {user.nickname}!</h1>
+      <Component.About />
+      <Component.Airtime />
+      <Component.Explore />
+      <Component.Feedback />
+      <Component.Hero />
+      <Component.Tvsubs />
+      <Component.Footer />
         <a href="/api/auth/logout">Log Out</a>
       </> 
     );
