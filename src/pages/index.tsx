@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Component from './sections';
+import * as Component from '../../sections';
 import { useUser } from '@auth0/nextjs-auth0/client';
 
 export default function HomePage() {
