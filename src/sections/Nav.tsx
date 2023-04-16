@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import styles from '../styles'
 import { navVariants } from "../utils/motion";
 import Image from 'next/image'
-import logo from '../public/logo.png'
+import logo from '../../public/logo.png'
 
 const Nav: React.FC = () => {
   return (
