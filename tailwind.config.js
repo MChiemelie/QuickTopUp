@@ -9,11 +9,21 @@ module.exports = {
   mode: 'jit',
   darkMode: true,
   theme: {
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'display': ['Oswald'],
+      'body': ['"Open Sans"'],
+     },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          'hero-pattern': "url('/public/heromap.svg')",
+          'footer-texture': "url('/img/footer-texture.png')",
+
       },
     },
   },

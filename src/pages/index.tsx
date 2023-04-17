@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Component from './src/sections';
+import * as Component from '../sections';
 import { useUser } from '@auth0/nextjs-auth0/client';
 
 const HomePage: React.FC = () => {
@@ -11,17 +11,18 @@ const HomePage: React.FC = () => {
     ) : error ? (
       <>{error.message}</>
     ) : user ? (
-      <>
+      <div 
+      className='bg-black overflow-auto'>
         <Component.Nav />
+        <Component.Hero />
         <Component.About />
         <Component.Airtime />
         <Component.Explore />
         <Component.Feedback />
-        <Component.Hero />
         <Component.Tvsubs />
         <Component.Footer />
         <a href="/api/auth/logout">Log Out</a>
-      </>
+      </div>
     ) : (
       <a href="/api/auth/login">Log In</a>
     )
