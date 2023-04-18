@@ -15,8 +15,8 @@ const HomePage: React.FC = () => {
       className='bg-black overflow-auto'>
         <Component.Nav />
         <Component.Hero />
-        <Component.About />
         <Component.Airtime />
+        <Component.About />
         <Component.Explore />
         <Component.Feedback />
         <Component.Tvsubs />

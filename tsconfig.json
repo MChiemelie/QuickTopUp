@@ -21,6 +21,6 @@
       "@sections/*": ["./src/sections/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/index.js", "src/utils/motion.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/index.js", "src/utils/motion.js", "tailwind.config.js", "next.config.js"],
   "exclude": ["node_modules"]
 }
