@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
       className="
       my-4 md:my-6 mb-0 p-10 font-sans font-bold
       text-sky-100 text-6xl text-center 
-      bg-[url('../../public/map.png')]  
+      bg-[url('./public/heromap.svg)]  
       bg-cover bg-no-repeat bg-center"
       >QuickTopUp, subscriptions must be easy.
        <p

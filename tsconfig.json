@@ -15,12 +15,12 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./src/pages/",
+    "baseUrl": "./pages/",
     "paths": {
-      "@/*": ["./src/*"],
-      "@sections/*": ["./src/sections/*"]
+      "@/*": ["./*"],
+      "@sections/*": ["./sections/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/styles/index.js", "src/utils/motion.js", "tailwind.config.js", "next.config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "styles/index.js", "/utils/motion.js", "tailwind.config.js", "next.config.js"],
   "exclude": ["node_modules"]
 }

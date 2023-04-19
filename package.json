@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clear-cache": "npm cache clean --force"
   },
   "homepage": "https://mchiemelie.github.io/QuickTopUp/",
   "main": "index.js",
@@ -29,5 +30,7 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.1"
-  }
+  },
+  "description": "QuickTopUp is a VTU website where users can buy airtime, data bundles and TV subscriptions at ver cheap rates.",
+  "author": ""
 }
