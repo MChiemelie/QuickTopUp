@@ -1,1 +1,1 @@
-QuickTopUp is a VTU website where users can buy airtime, data bundles and TV subscriptions at ver cheap rates.
+QuickTopUp is a VTU website where users can buy airtime, data bundles,pay bills and TV subscriptions at very cheap rates.
