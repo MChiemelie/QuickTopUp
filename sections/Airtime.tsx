@@ -1,4 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
+import mtn from "../public/mtn.png";
+import airtel from "../public/airtel.png";
+import glo from "../public/glo.png";
+import ninemoblie  from "../public/ninemoblie.png";
 
 const Airtime: React.FC = () => {
   return (
@@ -21,8 +26,27 @@ const Airtime: React.FC = () => {
       >Recharge to all your favourite networks.</p>
     </div>
     <div
-    className='w-1/2 justify-items-end'>
-      
+    className='w-1/2 justify-items-end flex p-10'>
+      <Image
+      src={mtn}
+      alt='mtnLogo'
+      className='w-20 '
+      />
+      <Image
+      src={glo}
+      alt='gloLogo'
+      className='w-20'
+      />
+      <Image
+      src={airtel}
+      alt='airtelLogo'
+      className='w-20'
+      />
+      <Image
+      src={ninemoblie}
+      alt='9mobileLogo'
+      className='w-20'
+      />
     </div>
     </>
   );
