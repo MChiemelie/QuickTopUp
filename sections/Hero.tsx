@@ -8,28 +8,28 @@ import {slideIn, staggerContainer, textVariant} from "../utils/motion";
 const Hero: React.FC = () => {
   const stagger: any = staggerContainer;
   return (
-    <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
-      <motion.div
+    <header className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+      <motion.header
         variants={ stagger }
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25}}
+        viewport={{ once: false, amount: 0.5}}
       />
-      <h2
+      <h1
       className="
-      my-4 md:my-6 mb-0 p-10 font-sans font-bold
+      my-4 md:my-6 mb-0 p-10 font-sans font-extrabold
       text-sky-100 text-6xl text-center 
-      bg-[url('./public/heromap.svg)]  
       bg-cover bg-no-repeat bg-center"
-      >QuickTopUp, subscriptions must be easy.
+      >Subscriptions made easy.
+      </h1>
+
        <p
       className='
-      m-1 md:m-2 p-8 font-sans md:font-thin lg:font-semibold md:text-6xlg
-      text-white-400 text-base text-center opacity-80
+      my-4 md:my-6 mb-0 p-10 font-sans font-bold
+      text-sky-100 text-lg text-center opacity-80
       bg-cover bg-no-repeat bg-center
-      '> Nigerians' leading platform for convenient and hassle-free way to purchase airtime, data, and TV subscriptions.</p>
-      </h2>
-    </section>
+      '>QiuckTopUp is Nigerians' leading platform for convenient and hassle-free way to purchase airtime, data, and TV subscriptions.</p>
+    </header>
   );
 };
 

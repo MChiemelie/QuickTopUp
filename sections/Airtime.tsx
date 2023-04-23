@@ -3,10 +3,10 @@
 import {motion } from 'framer-motion';
 import { airtimeContainer, airtimeItem } from "../utils/motion";
 import Image from 'next/image';
-import mtn from "../public/mtn.png";
-import airtel from "../public/airtel.png";
-import glo from "../public/glo.png";
-import ninemoblie  from "../public/mobile.png";
+import mtn from "../public/mtn.jpg";
+import airtel from "../public/airtel.jpg";
+import glo from "../public/glo.jpg";
+import _9moblie  from "../public/9mobile.jpg";
 
 
 const Airtime: React.FC = () => {
@@ -15,33 +15,34 @@ const Airtime: React.FC = () => {
     <div
     className='flex mx-2 justify-between'>
     <div
-    className='w-1/2 justify-items-start'>
+    className='w-1/3 justify-items-start'>
     <h1
       className="
-      m-1 md:m-2 px-8 font-sans md:font-bold lg:font-semibold md:text-6xlg
-      text-sky-100 text-4xl text-left
+      my-12 px-8 font-sans font-semibold
+      text-sky-100 text-6xl text-left
       bg-cover bg-no-repeat bg-center"
       >Buy airtime</h1>
       <p
       className="
-      m-1 md:m-2 px-8 font-sans md:text-6xlg
+      my-4 px-8 font-sans
       text-sky-100 text-xl text-left
       bg-cover bg-no-repeat bg-center"
-      >Recharge to all your favourite networks.</p>
+      >Recharge all your favourite networks at very discounted prices.</p>
     </div>
     <motion.div
       variants={airtimeContainer}
       initial='hidden'
       animate='visible'
-      className='flex-auto w-1/2'
+      className=''
       >
         <motion.div
           variants={airtimeItem}
-          className='grid grid-rows-2 grid-flow-col gap-3  rounded-full'>
-           <Image src={mtn} alt='mtn'/>
-           <Image src={glo} alt='glo'/>
-           <Image src={airtel} alt='airtel'/>
-           <Image src={ninemoblie} alt='ninemoblie'/>
+          className='grid grid-rows-2 grid-flow-col justify-around
+          w-2/3 h-96 gap-3 mx-20'>
+           <Image src={mtn} alt='mtn' className='rounded'/>
+           <Image src={glo} alt='glo' className='rounded'/>
+           <Image src={airtel} alt='airtel'className='rounded'/>
+           <Image src={_9moblie} alt='9moblie' className='rounded'/>
         </motion.div>
     </motion.div>
     </div>
