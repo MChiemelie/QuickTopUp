@@ -13,9 +13,10 @@ const Airtime: React.FC = () => {
   return (
     <>
     <div
-    className='flex mx-2 justify-between'>
+    className='flex mx-16 justify-between'>
     <div
     className='w-1/3 justify-items-start'>
+    <div className="gradient-02 z-1" />  
     <h1
       className="
       my-12 px-8 font-sans font-semibold

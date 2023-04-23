@@ -14,10 +14,10 @@ const styles = {
   navPadding: 'pt-[98px]',
 
   // hero section
-  heroHeading:
-      'font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white',
-  heroDText:
-      'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
+    heroHeading:
+      'my-4 mb-0 p-10 font-sans font-extrabold text-sky-100 text-6xl text-center',
+    heroParagraph:
+        'my-6 mb-0 p-10 font-sans font-bold text-sky-100 text-lg text-center opacity-80 bg-cover bg-no-repeat bg-center'
 };
 
 export default styles;
