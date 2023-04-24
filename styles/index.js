@@ -12,12 +12,6 @@ const styles = {
   flexStart: 'flex justify-start items-start',
   flexEnd: 'flex justify-end',
   navPadding: 'pt-[98px]',
-
-  // hero section
-    heroHeading:
-      'my-4 mb-0 p-10 font-sans font-extrabold text-sky-100 text-6xl text-center',
-    heroParagraph:
-        'my-6 mb-0 p-10 font-sans font-bold text-sky-100 text-lg text-center opacity-80 bg-cover bg-no-repeat bg-center'
 };
 
 export default styles;

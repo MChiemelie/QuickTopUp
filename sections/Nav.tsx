@@ -15,16 +15,16 @@ const Nav: React.FC = () => {
     whileInView="show"
     className={`${styles.xPaddings} p-4 relative`}
     >
-    <div className="absolute w-[100%] inset-0 gradient-01" />
     <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`} >
       <Image
       src={logo}
       alt="Logo"
-      className="rounded-sm  w-20 h-20 object-contain"
+      width={100}
       />
       <Image
        src={menu} 
-       alt="menu" />
+       alt="menu"
+       width={25} />
       </div>
     </motion.nav>
   );
