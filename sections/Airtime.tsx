@@ -42,7 +42,7 @@ const Airtime: React.FC = () => {
         <motion.div
           variants={airtimeItem}
           className='grid grid-rows-2 grid-flow-col  gap-2 rounded
-          hover:scale-75 sm:w-36Ai md:40 2xl:w-48'>
+          hover:scale-75 sm:w-36 md:40 2xl:w-48'>
            <Image src={mtn} alt='mtn'/>
            <Image src={glo} alt='glo' />
            <Image src={airtel} alt='airtel'/>
