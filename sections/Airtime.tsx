@@ -37,7 +37,7 @@ const Airtime: React.FC = () => {
       variants={airtimeContainer}
       initial='hidden'
       animate='visible'
-      className='flex items-center bg-black'
+      className='flex items-center sm:grid bg-black'
       >
         <motion.div
           variants={airtimeItem}
