@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         viewport={{ once: false, amount: 0.25}}
       >
         <div
-        className='flex justify-center items-center flex-col z- text-sky-100
+        className='flex justify-center items-center flex-col text-sky-100
                             md:m-6 2xl:my-16'>
           <motion.h1
           variants={textVariant(1.1)}
