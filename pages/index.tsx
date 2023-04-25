@@ -5,10 +5,7 @@ import * as Component from '../sections';
 const HomePage: React.FC = ()=> {
   return(
     <div 
-      className='bg-gradient-to-r 
-                          from-indigo-950 
-                          from-20% via-sky-950 via-40% 
-                          to-emerald-950 to-70%'>
+      className='bg-gradient-to-r from-sky-800 from-cyan-900 to-green-900'>
         <Component.Nav />
         <Component.Hero />
         <Component.Airtime />

@@ -18,7 +18,7 @@ const Nav: React.FC = () => {
       <Image
       src={logo}
       alt="logo"
-      className="w-20"
+      className="w-20 sm:10 md:15"
       />
       <Image
        src={menu} 

@@ -17,22 +17,23 @@ const Airtime: React.FC = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: .9}}
-    className='flex px-4 gap-4 mx-4 justify-around md:m-12'>
+      className='flex px-4 gap-4 mx-1 justify-around md:m-12'>
     <div
     className='items-center p-auto'>
     <motion.h1
       variants={textVariant(1.5)}
       className='my-8 font-sans font-bold text-sky-100 
       leading-normal tracking-wide
-      text-2xl md:text-5xl'
+      text-2xl md:text-5xl sm:lg 2xl:text-6xl'
       >Buy airtime</motion.h1>
       <motion.p
       variants={textVariant2}
       className="
-      font-sans w-52
+      font-sans w-96
       text-sky-100 text-xl text-left
-      md:w-96 md:text-md
-      sm:w-36 sm:text-sm"
+      md:text-xl
+      sm:w-24 sm:text-base
+      2xl:text-3xl"
       >Recharge all your favourite networks at very discounted prices.
       </motion.p>
     </div>
@@ -44,11 +45,11 @@ const Airtime: React.FC = () => {
       >
         <motion.div
           variants={airtimeItem}
-          className='grid grid-rows-2 grid-flow-col  gap-2 sm:w-56 md:72'>
-           <Image src={mtn} alt='mtn' className='rounded hover:scale-75'/>
-           <Image src={glo} alt='glo' className='rounded hover:scale-75'/>
-           <Image src={airtel} alt='airtel'className='rounded hover:scale-75'/>
-           <Image src={_9moblie} alt='9moblie' className='rounded hover:scale-75'/>
+          className='grid grid-rows-2 grid-flow-col  gap-2 sm:w-48'>
+           <Image src={mtn} alt='mtn' className='rounded hover:scale-75 sm:w-56 md:72 2xl:w-48'/>
+           <Image src={glo} alt='glo' className='rounded hover:scale-75 sm:w-56 md:72 2xl:w-48'/>
+           <Image src={airtel} alt='airtel'className='rounded hover:scale-75 sm:w-56 md:72 2xl:w-48'/>
+           <Image src={_9moblie} alt='9moblie' className='rounded hover:scale-75 sm:w-56 md:36 2xl:w-48'/>
         </motion.div>
     </motion.div>
     </motion.div>
