@@ -5,7 +5,10 @@ import * as Component from '../sections';
 const HomePage: React.FC = ()=> {
   return(
     <div 
-      className='bg-black overflow-auto'>
+      className='bg-gradient-to-r 
+                          from-indigo-950 
+                          from-20% via-sky-950 via-40% 
+                          to-emerald-950 to-70%'>
         <Component.Nav />
         <Component.Hero />
         <Component.Airtime />
@@ -14,7 +17,6 @@ const HomePage: React.FC = ()=> {
         <Component.Feedback />
         <Component.Tvsubs />
         <Component.Footer />
-        <a href="/api/auth/logout">Log Out</a>
       </div>
   )
 }

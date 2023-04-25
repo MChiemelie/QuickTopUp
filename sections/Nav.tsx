@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from "framer-motion";
-import styles from '../styles'
 import { navVariants } from "../utils/motion";
 import Image from 'next/image';
 import logo from '../public/logo.png';
@@ -13,18 +12,18 @@ const Nav: React.FC = () => {
     variants={ navVariants }
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} p-4 relative`}
+    className='p-3'
     >
-    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`} >
+    <div className='flex justify-between' >
       <Image
       src={logo}
-      alt="Logo"
-      width={100}
+      alt="logo"
+      className="w-20"
       />
       <Image
        src={menu} 
        alt="menu"
-       width={25} />
+       className="w-15" />
       </div>
     </motion.nav>
   );
