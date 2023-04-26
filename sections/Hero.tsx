@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           <motion.h1
           variants={textVariant(1.1)}
           className='my-8 font-sans text-6xl md:m-4
-                              text-center leading-relaxed tracking-wide md:text-4xl
+                              text-center leading-relaxed tracking-wide md:text-5xl
                               2xl:mx-auto 2xl:font-extrabold 2xl:text-7xl'
           viewport={{ once: false, amount: 0.25}}
           >Safe, Secure, Seamless.
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           >We understand the importance of staying connected, and we strive to offer you the best service possible, whether you need to top up your airtime, data, or TV subscriptions. With QuickTopUp, you can enjoy seamless and efficient recharge options that are tailored to your specific needs.
           </motion.p>
           <div
-          className='flex justify-center'
+          className='flex justify-center m-5'
           >
           <motion.button
           variants={slide('left')}
