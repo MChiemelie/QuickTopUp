@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           <motion.h1
           variants={textVariant(1.1)}
           className='my-8 font-sans text-6xl
-                              text-center leading-relaxed tracking-wide md:text-6xl
+                              text-center leading-relaxed tracking-wide md:text-5xl
                               2xl:mx-auto 2xl:font-extrabold 2xl:text-7xl'
           viewport={{ once: false, amount: 0.25}}
           >Safe, Secure, Seamless.
