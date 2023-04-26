@@ -5,14 +5,14 @@ import * as Component from '../sections';
 const HomePage: React.FC = ()=> {
   return(
     <div 
-      className='bg-gradient-to-r from-sky-800  from-cyan-900 to-green-800'>
+      className='bg-gradient-to-r from-sky-800 to-green-800'>
         <Component.Nav />
         <Component.Hero />
         <Component.Airtime />
-        <Component.About />
-        <Component.Explore />
-        <Component.Feedback />
         <Component.Tvsubs />
+        <Component.Nepa />
+        <Component.About />
+        <Component.Feedback />
         <Component.Footer />
       </div>
   )
