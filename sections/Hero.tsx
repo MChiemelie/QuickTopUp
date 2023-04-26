@@ -22,20 +22,16 @@ const Hero: React.FC = () => {
                             md:m-6 2xl:my-16'>
           <motion.h1
           variants={textVariant(1.1)}
-          className='my-14 font-sans text-6xl
-                              text-center leading-relaxed tracking-wide
-                              md:text-6xl
+          className='my-8 font-sans text-6xl
+                              text-center leading-relaxed tracking-wide md:text-6xl
                               2xl:mx-auto 2xl:font-extrabold 2xl:text-7xl'
           viewport={{ once: false, amount: 0.25}}
           >Safe, Secure, Seamless.
           </motion.h1>
           <motion.p
           variants={textVariant(2.5)}
-          className='mx-6 font-sans font-slimbold
-                            text-center leading-7 tracking-wide
-                            md:mx-6 md:text-md
-                            2xl:mx-48 2xl:text-xl
-                            sm:mx-4 sm:text-md sm:tracking-relaxed sm:leading-6'
+          className='md:mx-8 md:my-4 2xl:my-12 2xl:mx-48 font-sans font-slimbold text-center leading-7
+          tracking-wide md:text-md 2xl:text-xl sm:mx-4 sm:text-md sm:tracking-relaxed sm:leading-6'
           >We understand the importance of staying connected, and we strive to offer you the best service possible, whether you need to top up your airtime, data, or TV subscriptions. With QuickTopUp, you can enjoy seamless and efficient recharge options that are tailored to your specific needs.
           </motion.p>
           <div
