@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "license": "MIT",
   "build:css": "postcss styles/main.css -o public/styles.css",
-
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -25,6 +24,7 @@
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.4.3",
     "sharp": "^0.32.0",
     "typescript": "5.0.4"
   },

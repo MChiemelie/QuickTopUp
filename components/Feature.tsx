@@ -1,5 +1,6 @@
+import { useInView } from "react-intersection-observer";
 import { motion } from 'framer-motion';
-import { container, item, textVariant, textVariant2 } from "../utils/motion";
+import { container, item, textVariant, } from "../utils/motion";
 import Image from 'next/image';
 
 
@@ -11,29 +12,35 @@ interface Props {
 }
 
 const Feature: React.FC<Props> = ({ title, subtitle, description, images }) => {
+  const { ref, inView } = useInView();
+  const animation = {
+    opacity: inView ? 1 : 0,
+    y: inView ? 0 : 50,
+  }
   return (
     <>
       <motion.div
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: .9}}
-        className='flex flex-row lg:flex-col 2xl:px-16 sm:px-0 justify-between lg:items-center my-16'
+        ref={ref}
+        initial="initial"
+        animate={animation}
+        transition={{ duration: 3 }}
+        className='flex flex-row lg:flex-col 2xl:px-16 sm:px-0 justify-between lg:items-center my-36'
       >
         <div className='lg:space-y-3 w-4/5'>
           <motion.h1
-            variants={textVariant(1)}
+            variants={textVariant(4)}
             className='font-sans text-sky-100 leading-normal tracking-wide text-base text-left font-semibold lg:text-5xl 2xl:text-7xl m-2'
           >
             {title}
           </motion.h1>
           <motion.h1
-            variants={textVariant(1)}
+            variants={textVariant(5)}
             className='font-sans text-sky-100 leading-normal tracking-wide text-sm text-left font-medium px-6 lg:text-4xl 2xl:text-5xl'
           >
             {subtitle}
           </motion.h1>
           <motion.p
-            variants={textVariant(2)}
+            variants={textVariant(7)}
             className='font-sans text-sky-100 leading-normal tracking-wide text-base text-left font-normal lg:text-xl 2xl:text-2xl px-4 m-2'
           >
             {description}
