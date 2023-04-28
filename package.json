@@ -2,6 +2,8 @@
   "name": "quicktopup",
   "version": "0.1.0",
   "license": "MIT",
+  "build:css": "postcss styles/main.css -o public/styles.css",
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -28,8 +30,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.3.1"
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
   },
   "description": "QuickTopUp is a VTU website where users can buy airtime, data bundles and TV subscriptions at ver cheap rates.",
   "author": ""

@@ -6,8 +6,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
     './sections/**/*.{js,ts,jsx,tsx}',
   ],
-  mode: 'jit',
-  darkMode: true,
   theme: {
     fontFamily: {
       'sans': ['ui-sans-serif', 'system-ui'],

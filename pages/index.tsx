@@ -1,19 +1,29 @@
 import React from 'react';
-import * as Component from '../sections';
+import * as Component from '../components';
 // import { useUser } from '@auth0/nextjs-auth0/client';
  
 const HomePage: React.FC = ()=> {
   return(
     <div 
-      className='bg-gradient-to-r from-sky-800 to-green-800'>
+      className='bg-gradient-to-r from-sky-800 to-green-800 max-w-screen overflow-x-hidden'>
         <Component.Nav />
         <Component.Hero />
-        <Component.Airtime />
-        <Component.Tvsubs />
+        <Component.Feature
+          title="Buy"
+          subtitle="airtime and data"
+          description="Recharge all your favourite networks at very discounted prices."
+          images={['mtn.jpg', 'glo.jpg', 'airtel.jpg', '9mobile.jpg']}
+        />
+        <Component.Feature
+          title="Pay"
+          subtitle="for TV subscriptions"
+          description="Recharge all your favourite networks at very discounted prices."
+          images={['dstv.jpg', 'gotv.jpg', 'supersport.jpg', 'showmax.png']}
+        />
         <Component.Nepa />
         <Component.About />
-        <Component.Feedback />
-        <Component.Footer />
+        {/* <Component.Feedback /> */}
+        {/* <Component.Footer /> */}
       </div>
   )
 }

@@ -160,7 +160,7 @@ export const footerVariants = {
   },
 };
 
-export const airtimeContainer = {
+export const container = {
   hidden: { opacity: 1, scale: 1 },
   show: {
     opacity: 1,
@@ -172,7 +172,7 @@ export const airtimeContainer = {
   }
 }
   
-export const airtimeItem = {
+export const item = {
   hidden: { y: 20, opacity: 0 },
   show: {
     y: 0,
