@@ -15,12 +15,17 @@ const HomePage: React.FC = ()=> {
           images={['mtn.jpg', 'glo.jpg', 'airtel.jpg', '9mobile.jpg']}
         />
         <Component.Feature
-          title="Pay"
-          subtitle="for TV subscriptions"
+          title="Subscribe"
+          subtitle=" to TV channels"
           description="Recharge all your favourite networks at very discounted prices."
           images={['dstv.jpg', 'gotv.jpg', 'supersport.jpg', 'showmax.png']}
         />
-        <Component.Nepa />
+        <Component.Feature
+         title="Pay"
+         subtitle="electricty bills."
+         description="Recharge all your favourite networks at very discounted prices."
+         images={['eedc.jpg', 'yedc.jpg', 'ibedc.jpg', 'ekedc.jpg']}
+         />
         <Component.About />
         {/* <Component.Feedback /> */}
         {/* <Component.Footer /> */}

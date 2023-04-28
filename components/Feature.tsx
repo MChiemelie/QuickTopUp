@@ -17,7 +17,7 @@ const Feature: React.FC<Props> = ({ title, subtitle, description, images }) => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: .9}}
-        className='flex flex-row lg:flex-col 2xl:px-16 sm:px-0 justify-between lg:items-center m-8'
+        className='flex flex-row lg:flex-col 2xl:px-16 sm:px-0 justify-between lg:items-center my-16'
       >
         <div className='lg:space-y-3 w-4/5'>
           <motion.h1
@@ -28,12 +28,12 @@ const Feature: React.FC<Props> = ({ title, subtitle, description, images }) => {
           </motion.h1>
           <motion.h1
             variants={textVariant(1)}
-            className='font-sans text-sky-100 leading-normal tracking-wide text-sm text-left font-medium lg:text-4xl 2xl:text-5xl'
+            className='font-sans text-sky-100 leading-normal tracking-wide text-sm text-left font-medium px-6 lg:text-4xl 2xl:text-5xl'
           >
             {subtitle}
           </motion.h1>
           <motion.p
-            variants={textVariant(1.5)}
+            variants={textVariant(2)}
             className='font-sans text-sky-100 leading-normal tracking-wide text-base text-left font-normal lg:text-xl 2xl:text-2xl px-4 m-2'
           >
             {description}
@@ -43,13 +43,11 @@ const Feature: React.FC<Props> = ({ title, subtitle, description, images }) => {
           variants={container}
           initial='hidden'
           whileInView="show"
-          viewport={{ once: true, amount: 1}}
+          viewport={{ once: true, amount: .25}}
           className='flex items-center'
         >
           <motion.div
             variants={item}
-            initial='hidden'
-            whileInView="show"
             className='grid grid-rows-2 grid-flow-col m-4 lg:gap-2 gap-3 rounded hover:scale-25 w-64'
           >
            {images.map((image, index) => (

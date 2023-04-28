@@ -167,7 +167,8 @@ export const container = {
     scale: 1,
     transition: {
       delayChildren: 1,
-      staggerChildren: 2
+      staggerChildren: 2,
+      delay: 5,
     }
   }
 }
@@ -177,5 +178,5 @@ export const item = {
   show: {
     y: 0,
     opacity: 1
-  }
+  },
 }
