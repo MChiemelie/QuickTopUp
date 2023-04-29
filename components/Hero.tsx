@@ -39,10 +39,10 @@ const Hero: React.FC = () => {
           >
           <motion.button
           variants={slide('left')}
-          className='m-2 p-4 bg-teal-950 sm:mx-4 md:m-6 lg:mx-8 2xl:mx-6 2xl:my-8 2xl:w-40 sm:w-32 sm:p-2 rounded-sm'> Get Started </motion.button>
+          className='m-2 p-4 bg-emerald-500 sm:mx-4 md:m-6 lg:mx-8 2xl:mx-6 2xl:my-8 2xl:w-40 sm:w-32 sm:p-2 rounded-sm'> Get Started </motion.button>
           <motion.button
           variants={slide('right')}
-          className='m-2 p-4 bg-teal-950 sm:mx-4 md:m-6 lg:mx-8 2xl:mx-6 2xl:my-8 2xl:w-40 sm:w-32 rounded-sm'> Contact Us </motion.button>
+          className='m-2 p-4 bg-sky-500 sm:mx-4 md:m-6 lg:mx-8 2xl:mx-6 2xl:my-8 2xl:w-40 sm:w-32 rounded-sm'> Contact Us </motion.button>
           </div>
         </div>
       </motion.div>
