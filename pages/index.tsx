@@ -5,7 +5,7 @@ import * as Component from '../components';
 const HomePage: React.FC = ()=> {
   return(
     <div 
-      className="bg-gradient-to-r from-sky-500 to-emerald-500  max-w-screen overflow-x-hidden">
+      className="bg-gradient-to-r from-sky-700 to-emerald-700 sm:[bg-gradient-to-r from-sky-500 to-emerald-500 ] max-w-screen overflow-x-hidden">
         <Component.Nav />
         <Component.Hero />
         <Component.Feature
@@ -24,7 +24,7 @@ const HomePage: React.FC = ()=> {
           title="Subscribe"
           subtitle=" to TV channels"
           description="Recharge all your favourite networks at very discounted prices."
-          images={['dstv.jpg', 'gotv.jpg', 'supersport.jpg', 'showmax.png']}
+          images={['dstv.jpg', 'gotv.jpg', 'showmax.png', 'supersport.jpg']}
         />
         <Component.Feature
          title="Fund"

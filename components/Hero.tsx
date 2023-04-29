@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           variants={textVariant(1.1)}
           className='my-8 font-sans text-6xl md:m-4
                               text-center leading-relaxed tracking-wide md:text-5xl
-                              2xl:mx-auto 2xl:font-extrabold 2xl:text-7xl'
+                              2xl:mx-auto 2xl:font-extrabold 2xl:text-8xl'
           viewport={{ once: false, amount: 0.25}}
           >Safe, Secure, Seamless.
           </motion.h1>
@@ -39,10 +39,10 @@ const Hero: React.FC = () => {
           >
           <motion.button
           variants={slide('left')}
-          className='m-2 p-4 bg-emerald-500 sm:mx-4 md:m-6 lg:mx-8 2xl:mx-6 2xl:my-8 2xl:w-40 sm:w-32 sm:p-2 rounded-sm'> Get Started </motion.button>
+          className='m-2 p-4 bg-emerald-900 sm:[bg-emerald-700] sm:mx-4 md:m-6 lg:mx-8 2xl:mx-6 2xl:my-8 2xl:w-40 sm:w-32 sm:p-2 rounded-sm'> Get Started </motion.button>
           <motion.button
           variants={slide('right')}
-          className='m-2 p-4 bg-sky-500 sm:mx-4 md:m-6 lg:mx-8 2xl:mx-6 2xl:my-8 2xl:w-40 sm:w-32 rounded-sm'> Contact Us </motion.button>
+          className='m-2 p-4 bg-sky-900 sm:[bg-sky-700] sm:mx-4 md:m-6 lg:mx-8 2xl:mx-6 2xl:my-8 2xl:w-40 sm:w-32 rounded-sm'> Contact Us </motion.button>
           </div>
         </div>
       </motion.div>
