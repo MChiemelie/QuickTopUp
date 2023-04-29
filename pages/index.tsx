@@ -5,7 +5,7 @@ import * as Component from '../components';
 const HomePage: React.FC = ()=> {
   return(
     <div 
-      className="bg-gradient-to-r from-sky-800 to-green-800 sm:from-sky-900 sm:to-green-900 md:from-sky-1000 md:to-green-1000 max-w-screen overflow-x-hidden">
+      className="bg-gradient-to-r from-sky-500 to-emerald-500  max-w-screen overflow-x-hidden">
         <Component.Nav />
         <Component.Hero />
         <Component.Feature
